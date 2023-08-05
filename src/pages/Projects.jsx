@@ -4,7 +4,12 @@ import { motion } from 'framer-motion';
 
 export default function Projects() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <motion.div 
+        initial={{opacity: 0, y: 700}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 1, ease: "easeOut"}}
+        className="bg-layered-waves-3 bg-cover bg-center bg-no-repeat hero min-h-screen">
+
         <motion.div 
             className="hero-content"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -34,6 +39,6 @@ export default function Projects() {
             
         </motion.div>
         
-    </div>
+    </motion.div>
   )
 }

@@ -8,7 +8,11 @@ export default function Home() {
     const name = "Roald!".split("");
 
   return (
-    <div className="bg-base-200 min-h-screen flex items-center justify-center">
+    <motion.div 
+        initial={{opacity: 0, y: 700}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 1, ease: "easeOut"}}
+        className="bg-layered-waves-1 bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center">
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -63,6 +67,6 @@ export default function Home() {
                 </button>
             </div>
         </motion.div>
-    </div>
+    </motion.div>
   )
 }

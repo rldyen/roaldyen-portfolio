@@ -8,7 +8,7 @@ import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (
-      <div className="App">
+      <div className="App bg-base-200">
         <AnimatedCursor
           innerSize={12} 
           outerSize={12}

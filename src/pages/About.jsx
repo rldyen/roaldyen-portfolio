@@ -15,7 +15,11 @@ export default function About() {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200"
+    <motion.div 
+      initial={{opacity: 0, y: 700}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1, ease: "easeOut"}}
+      className="bg-layered-waves-2 bg-cover bg-center bg-no-repeat hero min-h-screen"
       >
         <motion.div 
           className="hero-content flex-col lg:flex-row"
@@ -179,6 +183,6 @@ export default function About() {
               )}
             </div>
      </motion.div>
-</div>
+</motion.div>
   )
 }
