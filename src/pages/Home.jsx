@@ -23,10 +23,10 @@ export default function Home() {
                 </div>
 
                 <div className="ml-3 text-4xl sm:text-2xl md:text-6xl lg:text-6xl ">
-                    <div className="font-bold">
+                    <div className="font-bold text-primary">
                         {name.map((letter, index) =>{
                             return(
-                                <span className="cursor-default hover:text-primary">
+                                <span className="cursor-default hover:text-secondary">
                                     <TextSpan 
                                         key={index}>
                                         {letter === " " ? "\u00A0" : letter}

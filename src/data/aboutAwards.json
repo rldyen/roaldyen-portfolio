@@ -2,8 +2,9 @@
     "awards":[
         {
             "id": "1",
-            "title": "1st Place Best Capstone Project - IT Research Colloquium 2023 Web and Mobile App Development Track",
+            "title": "1st Place Best Capstone Project",
             "issuer": "University of Santo Tomas",
+            "desc": "IT Research Colloquium 2023 Web and Mobile App Development Track",
             "date": "2023"
         },
         {
@@ -14,14 +15,15 @@
         },
         {
             "id": "3",
-            "title": "Poster Presenter at the 2nd Senior High School Capstone Experience Conference at University of the Philippines Los Baños",
+            "title": "Poster Presenter ",
             "issuer": "University of Santo Tomas",
+            "desc" : "2nd Senior High School Capstone Experience Conference at University of the Philippines Los Baños",
             "date": "2019"
         },
         {
             "id": "1",
-            "title": "PhilNITS Level 1 Information Technology Passport (IP) Certified",
-            "issuer": "University of Santo Tomas",
+            "title": "PhilNITS Level 1 (IP) Certified",
+            "issuer": "Philippine National Information Technology Standards Foundation, Inc.",
             "date": "Issued 2022 Nov 18"
         }
 

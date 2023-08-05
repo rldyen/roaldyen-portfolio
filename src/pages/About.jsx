@@ -67,14 +67,14 @@ export default function About() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   >
-                  <div className="flex flex-col"> 
+                  <div className="flex flex-col "> 
                     <ul>
                       {aboutSkills.skills.map((skill) => (
                         <li
-                          className="pb-2"
+                          className="pb-4"
                           key={skill.id}>
-                          <p className='text-xl text-primary'> {skill.title} </p>
-                          <p> {skill.desc} </p>
+                          <div className="badge text-xl badge-primary p-4"> {skill.title} </div>
+                          <p className="ml-5 mt-2"> {skill.desc} </p>
                         </li>
                       ))}
                     </ul>
@@ -91,21 +91,30 @@ export default function About() {
                     <ul>
                       {aboutWork.works.map((work) => (
                         <li
-                          className="pb-2"
+                          className="pb-4"
                           key={work.id}>
-                          <p className='text-xl text-primary'> {work.title} </p>
+                          <div className="badge text-xl badge-primary p-4"> {work.title} </div>
+
+                          <div className="ml-5 mt-2">
                           <a
                             className ="hover:text-secondary-focus ease-in-out duration-300 italic"
                             href = {work.link}
                             target="_blank" 
                             rel="noreferrer">{work.company}</a> 
+                          
                           <p> {work.date} </p>
-
+                         
                           <ul>
                           {Object.values(work.desc[0]).map((desc, index) => (
                             <li key={index}> - {desc} </li>
                           ))}
                           </ul>
+
+                          </div>
+                          
+                          
+
+                          
                         </li>
                       ))}
                     </ul>
@@ -122,16 +131,20 @@ export default function About() {
                     <ul>
                       {aboutEducation.educations.map((education) => (
                         <li
-                          className="pb-2"
+                          className="pb-4"
                           key={education.id}>
-                          <p className='text-xl text-primary'> {education.title} </p>
+                         <div className="badge text-xl badge-primary p-4"> {education.title} </div>
+
+                         <div className="ml-5 mt-2">
                           <a
-                            className ="hover:text-secondary-focus ease-in-out duration-300"
-                            href = {education.link}
-                            target="_blank" 
-                            rel="noreferrer">{education.school}</a> 
-                          <p> {education.date} </p>
-                          <p> {education.desc} </p>
+                              className ="hover:text-secondary-focus ease-in-out duration-300"
+                              href = {education.link}
+                              target="_blank" 
+                              rel="noreferrer">{education.school}</a> 
+                            <p> {education.date} </p>
+                            <p> {education.desc} </p>
+                         </div>
+                          
                         </li>
                       ))}
                     </ul>
@@ -148,11 +161,16 @@ export default function About() {
                     <ul>
                       {aboutAwards.awards.map((award) => (
                         <li
-                          className="pb-2"
+                          className="pb-4"
                           key={award.id}>
-                          <p className='text-xl text-primary'> {award.title} </p>
-                          <p> {award.issuer}</p> 
-                          <p> {award.date} </p>
+                          <div className="badge text-xl badge-primary p-4"> {award.title} </div>
+
+                          <div className="ml-5 mt-2">
+                            <p> {award.desc} </p>
+                            <p> {award.issuer}</p>
+                            <p> {award.date} </p>
+                          </div>
+                          
                         </li>
                       ))}
                     </ul>
