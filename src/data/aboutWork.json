@@ -1,37 +1,35 @@
 {
-    "works":[
+  "works": [
+    {
+      "id": "1",
+      "title": "Virtual Apprenticeship",
+      "company": "KadaKareer Virtual Apprenticeship Program",
+      "date": "2023 May - 2023 Jul (3 months)",
+      "link": "https://www.kadakareer.com/",
+      "desc": [
         {
-            "id": "1",
-            "title": "Virtual Apprenticeship",
-            "company": "KadaKareer Virtual Apprenticeship Program",
-            "date": "2023 May - 2023 Jul (3 months)",
-            "link": "https://www.kadakareer.com/",
-            "desc": [
-                {
-                    "desc1" : "Evaluated inconsistencies in the UI/UX of a website.",
-                    "desc2" : "Proposed improvements of company's brand identity.",
-                    "desc3" : "Revamped a design for the company using Figma."
-                }
-                
-            ]
-        },
-        {
-            "id": "2",
-            "title": "UI/UX Design Intern",
-            "company": "Symph Inc.",
-            "date": "2023 Jan - 2023 May (5 months)",
-            "link": "https://www.symph.co/",
-            "desc": [
-                {
-                    "desc1" : "Assisted with creating app design flows of projects.",
-                    "desc2" : "Designed UI proposals of web and mobile apps.",
-                    "desc3" : "UI/UX Design review and testing of web and mobile apps.",
-                    "desc4" : "Assisted in user interviews and usability testing.",
-                    "desc5" : "Assisted in fixing web designs using Webflow.",
-                    "desc6" : "Manual QA testing of web and mobile apps."
-                }
-            ]
+          "desc1": "Evaluated inconsistencies in the UI/UX of a website.",
+          "desc2": "Proposed improvements of company's brand identity.",
+          "desc3": "Revamped a design for the company using Figma."
         }
-
-    ]
+      ]
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Design Intern",
+      "company": "Symph Inc.",
+      "date": "2023 Jan - 2023 May (5 months)",
+      "link": "https://www.symph.co/",
+      "desc": [
+        {
+          "desc1": "Assisted with creating app design flows of projects.",
+          "desc2": "Designed UI proposals of web and mobile apps.",
+          "desc3": "UI/UX Design review and testing of web and mobile apps.",
+          "desc4": "Assisted in user interviews and usability testing.",
+          "desc5": "Assisted in fixing web designs using Webflow.",
+          "desc6": "Manual QA testing of web and mobile apps."
+        }
+      ]
+    }
+  ]
 }

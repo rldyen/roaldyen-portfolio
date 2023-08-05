@@ -1,31 +1,30 @@
 {
-    "awards":[
-        {
-            "id": "1",
-            "title": "1st Place Best Capstone Project",
-            "issuer": "University of Santo Tomas",
-            "desc": "IT Research Colloquium 2023 Web and Mobile App Development Track",
-            "date": "2023"
-        },
-        {
-            "id": "2",
-            "title": "Consistent Dean's Lister",
-            "issuer": "University of Santo Tomas",
-            "date": "2019 - 2023"
-        },
-        {
-            "id": "3",
-            "title": "Poster Presenter ",
-            "issuer": "University of Santo Tomas",
-            "desc" : "2nd Senior High School Capstone Experience Conference at University of the Philippines Los Baños",
-            "date": "2019"
-        },
-        {
-            "id": "1",
-            "title": "PhilNITS Level 1 (IP) Certified",
-            "issuer": "Philippine National Information Technology Standards Foundation, Inc.",
-            "date": "Issued 2022 Nov 18"
-        }
-
-    ]
+  "awards": [
+    {
+      "id": "1",
+      "title": "1st Place Best Capstone Project",
+      "issuer": "University of Santo Tomas",
+      "desc": "IT Research Colloquium 2023 Web and Mobile App Development Track",
+      "date": "2023"
+    },
+    {
+      "id": "2",
+      "title": "Consistent Dean's Lister",
+      "issuer": "University of Santo Tomas",
+      "date": "2019 - 2023"
+    },
+    {
+      "id": "3",
+      "title": "Poster Presenter ",
+      "issuer": "University of Santo Tomas",
+      "desc": "2nd Senior High School Capstone Experience Conference at University of the Philippines Los Baños",
+      "date": "2019"
+    },
+    {
+      "id": "1",
+      "title": "PhilNITS Level 1 (IP) Certified",
+      "issuer": "Philippine National Information Technology Standards Foundation, Inc.",
+      "date": "Issued 2022 Nov 18"
+    }
+  ]
 }
