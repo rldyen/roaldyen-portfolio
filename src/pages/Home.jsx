@@ -12,7 +12,7 @@ export default function Home() {
         initial={{opacity: 0, y: 700}}
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1, ease: "easeOut"}}
-        className="bg-[url(../public/backgrounds/layered-waves-haikei-1.svg)] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center">
+        className="bg-[url(./assets/backgrounds/layered-waves-haikei-1.svg)] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center">
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
