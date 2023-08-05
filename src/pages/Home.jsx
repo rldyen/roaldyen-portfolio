@@ -26,7 +26,7 @@ export default function Home() {
                     <div className="font-bold text-primary">
                         {name.map((letter, index) =>{
                             return(
-                                <span className="cursor-default hover:text-secondary">
+                                <span className="hover:text-secondary">
                                     <TextSpan 
                                         key={index}>
                                         {letter === " " ? "\u00A0" : letter}
