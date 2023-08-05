@@ -2,6 +2,7 @@ import React from 'react';
 import TextSpan from '../components/TextSpan';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
     const name = "Roald!".split("");
@@ -38,8 +39,13 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center">
-                <div className="mt-6 sm:text-xl md:text-3xl lg:text-3xl">
-            An aspiring UI/UX Designer
+                <div className="mt-6 sm:text-xl md:text-3xl lg:text-3xl text-accent">
+                <TypeAnimation
+                    sequence = {[
+                        'An aspiring UI/UX Designer', 2000,
+                    ]}
+                    wrapper="span"
+                    cursor={true}/>
                 </div>
             </div>
 
@@ -54,7 +60,6 @@ export default function Home() {
                     <Link to="/projects">See my Projects</Link>
                 </button>
             </div>
-
         </motion.div>
     </div>
   )

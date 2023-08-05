@@ -5,6 +5,7 @@ import aboutWork from '../data/aboutWork.json'
 import aboutEducation from '../data/aboutEducation.json'
 import aboutAwards from '../data/aboutAwards.json'
 import { motion } from 'framer-motion';
+import Tilt from 'react-parallax-tilt';
 
 export default function About() {
 
@@ -25,33 +26,35 @@ export default function About() {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01]
           }}>
-            <img src={Roald} alt="Roald Graduation Photo" className="sm:max-w-sm md:max-w-md lg:max-w-wd rounded-3xl shadow-2xl" />
+            <Tilt>
+              <img src={Roald} alt="Roald Graduation Photo" className="sm:max-w-sm md:max-w-md lg:max-w-wd rounded-3xl shadow-2xl" />
+            </Tilt>
         
-            <div className="m-8">
+            <div className="m-14">
                 <h1 className="text-5xl font-bold">About Me</h1>
                 <p className="py-6 mb-5">I am an IT graduate specializing in Web and Mobile App Development seeking an entry-level position in UI/UX Design to further improve my personal growth and career, as well as provide great service to the company.</p>
 
                 <div className="tabs gap-8">
                   <a
-                    className={`tab text-xl tab-bordered ${activeTab === 'skills' && 'tab-active'}`}
+                    className={`tab text-lg tab-bordered ${activeTab === 'skills' && 'tab-active'}`}
                     onClick={() => handleTabClick('skills')}>
                     Skills
                   </a>
 
                   <a
-                    className={`tab text-xl tab-bordered ${activeTab === 'workExperiences' && 'tab-active'}`}
+                    className={`tab text-lg tab-bordered ${activeTab === 'workExperiences' && 'tab-active'}`}
                     onClick={() => handleTabClick('workExperiences')}>
                     Work Experiences
                   </a>
 
                   <a
-                    className={`tab text-xl tab-bordered ${activeTab === 'education' && 'tab-active'}`}
+                    className={`tab text-lg tab-bordered ${activeTab === 'education' && 'tab-active'}`}
                     onClick={() => handleTabClick('education')}>
                     Education
                   </a>
 
                   <a
-                    className={`tab text-xl tab-bordered ${activeTab === 'awardsCertifications' && 'tab-active'}`}
+                    className={`tab text-lg tab-bordered ${activeTab === 'awardsCertifications' && 'tab-active'}`}
                     onClick={() => handleTabClick('awardsCertifications')}>
                     Awards & Certifications
                   </a>
