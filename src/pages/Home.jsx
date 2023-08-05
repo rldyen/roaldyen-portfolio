@@ -51,7 +51,7 @@ export default function Home() {
 
             <div className="flex items-center justify-center">
                 <p className="m-8 text-justify sm:w-9/12 md:w-9/12 lg:w-6/12 mt-10 text-base-content">
-                    I am enthusiastic about technology and eager to create web-based application designs utilizing modern technologies. I am very interested in doing UI/UX Design, and I am continuously improving my skills to become a well-known UI/UX Designer in the IT industry. I also enjoy learning Front-End Development in Web Development, and my passion is focused on designing and creating appealing interfaces for both web and mobile applications.
+                    I am enthusiastic about technology and eager to create web-based application designs utilizing modern technologies. I am very interested in doing UI/UX Design, and I am continuously improving my skills to become a great UI/UX Designer in the IT industry. I also enjoy learning Front-End Development in Web Development, and my passion is focused on designing and creating appealing interfaces for both web and mobile applications.
                 </p>
             </div>
 
