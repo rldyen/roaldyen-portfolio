@@ -29,7 +29,9 @@ export default function Home() {
                                 <span className="hover:text-secondary">
                                     <TextSpan 
                                         key={index}>
-                                        {letter === " " ? "\u00A0" : letter}
+                                        <Link to="/about">
+                                            {letter === " " ? "\u00A0" : letter}
+                                        </Link>
                                     </TextSpan>
                                 </span>
                             )
