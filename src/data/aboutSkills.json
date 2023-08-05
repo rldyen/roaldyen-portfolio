@@ -1,0 +1,24 @@
+{
+    "skills":[
+        {
+            "id": "1",
+            "title": "UI/UX Design",
+            "desc": "Figma, Adobe XD, Adobe Photoshop, Clip Studio Paint"
+        },
+        {
+            "id": "2",
+            "title": "Front-End Development",
+            "desc": "HTML, Vanilla CSS, Bootstrap, Tailwind CSS, Vanilla Javascript, ReactJS"
+        },
+        {
+            "id": "3",
+            "title": "Back-End Development & Database",
+            "desc": "NodeJS, ExpressJS, MSSQL, MySQL, Apache, MongoDB"
+        },
+        {
+            "id": "4",
+            "title": "Programming Languages",
+            "desc": "Java, Android Java, Python, VB.Net, PHP, JavaScript"
+        }
+    ]
+}
