@@ -19,7 +19,7 @@ export default function About() {
       initial={{opacity: 0, y: 700}}
       animate={{opacity: 1, y: 0}}
       transition={{duration: 1, ease: "easeOut"}}
-      className="bg-layered-waves-2 bg-cover bg-center bg-no-repeat hero min-h-screen"
+      className="bg-[url(./assets/backgrounds/layered-waves-haikei-2.svg)] bg-cover bg-center bg-no-repeat hero min-h-screen"
       >
         <motion.div 
           className="hero-content flex-col lg:flex-row"

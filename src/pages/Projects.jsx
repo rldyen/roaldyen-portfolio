@@ -8,7 +8,7 @@ export default function Projects() {
         initial={{opacity: 0, y: 700}}
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1, ease: "easeOut"}}
-        className="bg-layered-waves-3 bg-cover bg-center bg-no-repeat hero min-h-screen">
+        className="bg-[url(./assets/backgrounds/layered-waves-haikei-3.svg)] bg-cover bg-center bg-no-repeat hero min-h-screen">
 
         <motion.div 
             className="hero-content"

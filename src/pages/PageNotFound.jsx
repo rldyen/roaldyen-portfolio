@@ -8,7 +8,7 @@ function PageNotFound() {
         initial={{opacity: 0, y: 700}}
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1, ease: "easeOut"}}
-        className="bg-layered-waves-5 hero min-h-screen ">
+        className="bg-[url(./assets/backgrounds/layered-waves-haikei-5.svg)] hero min-h-screen ">
         <motion.div 
             className="hero-content text-center"
             initial={{ opacity: 0, scale: 0.5 }}

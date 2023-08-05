@@ -6,15 +6,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'layered-waves-1': "url('./public/backgrounds/layered-waves-haikei-1.svg')",
-        'layered-waves-2': "url('./public/backgrounds/layered-waves-haikei-1.svg')",
-        'layered-waves-3': "url('./public/backgrounds/layered-waves-haikei-1.svg')",
-        'layered-waves-4': "url('./public/backgrounds/layered-waves-haikei-1.svg')",
-        'layered-waves-5': "url('./public/backgrounds/layered-waves-haikei-1.svg')"
-      }
-    },
+    extend: {},
     screens: {
       'xs': '475px',
       ...defaultTheme.screens,
