@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const routeToHome = () => {
+    let path = "/";
+    navigate(path);
+  };
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -41,9 +46,11 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl ml-6">
-          <Link to="/">rldyen</Link>
-        </a>
+        <button
+          onClick={routeToHome}
+          className="btn btn-ghost normal-case text-xl ml-6">
+          rldyen
+        </button>
       </div>
 
       <div className="navbar-center hidden lg:flex">

@@ -1,11 +1,16 @@
 import React from "react";
 import TextSpan from "../components/TextSpan";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const name = "Roald!".split("");
+  const navigate = useNavigate();
+  const routeToProjects = () => {
+    let path = "/projects";
+    navigate(path);
+  };
 
   return (
     <motion.div
@@ -61,15 +66,18 @@ export default function Home() {
             application designs utilizing modern technologies. I am very
             interested in doing UI/UX Design, and I am continuously improving my
             skills to become a great UI/UX Designer in the IT industry. I also
-            enjoy learning Front-End Development in Web Development, and my
+            enjoy learning Front-End Web Development, and my
             passion is focused on designing and creating appealing interfaces
             for both web and mobile applications.
           </p>
         </div>
 
         <div className="flex items-center justify-center">
-          <button className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300 ">
-            <Link to="/projects">See my Projects</Link>
+          <button
+            onClick={routeToProjects}
+            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300 "
+          >
+            See my Projects
           </button>
         </div>
       </motion.div>
