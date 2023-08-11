@@ -20,7 +20,8 @@ export default function Projects() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <h1 className="text-5xl font-bold">Coming Soon</h1>
+        {/* <div className="card w-96 bg-base-100 shadow-xl">
           <figure>
             <img src={ProjectUSTH} alt="USTH" />
           </figure>
@@ -36,7 +37,7 @@ export default function Projects() {
               <div className="badge badge-outline">Products</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   );
