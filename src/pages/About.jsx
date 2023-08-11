@@ -6,11 +6,18 @@ import aboutEducation from "../data/aboutEducation.json";
 import aboutAwards from "../data/aboutAwards.json";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
+  };
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
   };
 
   return (
@@ -30,11 +37,17 @@ export default function About() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
+        {!imageLoaded && (
+          <div className="loader-container">
+            <ClipLoader color={"#fff"} size={150} />
+          </div>
+        )}
         <Tilt>
           <img
             src={Roald}
             alt="Roald Graduation Photo"
             className="sm:max-w-sm md:max-w-md lg:max-w-wd rounded-3xl shadow-2xl"
+            onLoad={handleImageLoad}
           />
         </Tilt>
 
