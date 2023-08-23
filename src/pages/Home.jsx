@@ -77,7 +77,7 @@ export default function Home() {
         <div className="flex items-center justify-center">
           <button
             onClick={routeToProjects}
-            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300 "
+            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300"
           >
             See my Projects
           </button>
