@@ -7,12 +7,12 @@
     },
     {
       "id": "2",
-      "title": "Front-End",
+      "title": "Front-End Development",
       "desc": "HTML, Vanilla Javascript, ReactJS, Vanilla CSS, Bootstrap, Tailwind CSS, daisyUI"
     },
     {
       "id": "3",
-      "title": "Back-End & Database",
+      "title": "Back-End Development & Database",
       "desc": "NodeJS, ExpressJS, MSSQL, MySQL, Apache, MongoDB"
     },
     {

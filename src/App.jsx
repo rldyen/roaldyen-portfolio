@@ -9,7 +9,25 @@ import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <div className="App bg-base-200">
-      <AnimatedCursor innerSize={12} outerSize={12} color="209, 23, 138" />
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={12}
+        color="209, 23, 138"
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          'input[type="checkbox"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
 
       <Router>
         <Navbar />

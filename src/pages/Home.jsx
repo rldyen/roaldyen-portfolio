@@ -75,12 +75,15 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center">
-          <button
+          <motion.button
             onClick={routeToProjects}
-            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300"
+            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             See my Projects
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     </motion.div>

@@ -8,6 +8,19 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import ClipLoader from "react-spinners/ClipLoader";
 
+const shapeClasses = [
+  "rounded-2xl",
+  "mask-squircle",
+  "mask-heart",
+  "mask-hexagon",
+  "mask-decagon",
+  "mask-pentagon",
+  "mask-diamond",
+  "mask-circle",
+  "mask-star-2",
+  "mask-triangle",
+];
+
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");
   const handleTabClick = (tabName) => {
@@ -18,6 +31,14 @@ export default function About() {
 
   const handleImageLoad = () => {
     setImageLoaded(true);
+  };
+
+  const [shapeClass, setShapeClass] = useState("rounded-2xl");
+
+  const handleImageClick = () => {
+    const randomIndex = Math.floor(Math.random() * shapeClasses.length);
+    const newShapeClass = shapeClasses[randomIndex];
+    setShapeClass(newShapeClass);
   };
 
   return (
@@ -42,11 +63,13 @@ export default function About() {
             <ClipLoader color={"#fff"} size={150} />
           </div>
         )}
+
         <Tilt>
           <img
             src={Roald}
             alt="Roald Graduation Photo"
-            className="sm:max-w-sm md:max-w-md lg:max-w-wd rounded-3xl shadow-2xl"
+            className={`sm:max-w-sm md:max-w-md lg:max-w-wd shadow-2xl mask ${shapeClass}`}
+            onClick={handleImageClick}
             onLoad={handleImageLoad}
           />
         </Tilt>
@@ -54,10 +77,13 @@ export default function About() {
         <div className="m-14">
           <h1 className="text-5xl font-bold">About Me</h1>
           <p className="py-6 mb-5">
-            I am an IT graduate specializing in Web and Mobile App Development
-            seeking an entry-level position in UI/UX Design to further improve
-            my personal growth and career, as well as provide great service to
-            the company.
+            I am an{" "}
+            <span className="text-accent font-semibold">
+              IT graduate specializing in Web and Mobile App Development
+            </span>{" "}
+            seeking an entry-level position in UI/UX Design or Web Development
+            to further improve my personal growth and career, as well as provide
+            great service to the company.
           </p>
 
           <div className="tabs gap-8">
@@ -106,17 +132,23 @@ export default function About() {
               animate={{ opacity: 1 }}
             >
               <div className="flex flex-col ">
-                <ul>
-                  {aboutSkills.skills.map((skill) => (
-                    <li className="pb-4" key={skill.id}>
-                      <div className="badge text-xl badge-primary p-4">
-                        {" "}
-                        {skill.title}{" "}
-                      </div>
+                {aboutSkills.skills.map((skill) => (
+                  <motion.div
+                    tabIndex={0}
+                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <input type="checkbox" className="peer " />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
+                      {skill.title}{" "}
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
                       <p className="ml-5 mt-2"> {skill.desc} </p>
-                    </li>
-                  ))}
-                </ul>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}
@@ -128,35 +160,38 @@ export default function About() {
               animate={{ opacity: 1 }}
             >
               <div className="flex flex-col">
-                <ul>
-                  {aboutWork.works.map((work) => (
-                    <li className="pb-4" key={work.id}>
-                      <div className="badge text-xl badge-primary p-4">
-                        {" "}
-                        {work.title}{" "}
-                      </div>
-
+                {aboutWork.works.map((work) => (
+                  <motion.div
+                    tabIndex={0}
+                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <input type="checkbox" className="peer " />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
+                      {work.title}{" "}
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
                       <div className="ml-5 mt-2">
                         <a
-                          className="hover:text-secondary-focus ease-in-out duration-300 italic"
+                          className="hover:text-blue-700 ease-in-out duration-300 italic"
                           href={work.link}
                           target="_blank"
                           rel="noreferrer"
                         >
                           {work.company}
                         </a>
-
-                        <p> {work.date} </p>
-
-                        <ul>
+                        <p className=""> {work.date} </p>
+                        <ul className="mt-2">
                           {Object.values(work.desc[0]).map((desc, index) => (
                             <li key={index}> - {desc} </li>
                           ))}
                         </ul>
                       </div>
-                    </li>
-                  ))}
-                </ul>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}
@@ -168,17 +203,22 @@ export default function About() {
               animate={{ opacity: 1 }}
             >
               <div className="flex flex-col">
-                <ul>
-                  {aboutEducation.educations.map((education) => (
-                    <li className="pb-4" key={education.id}>
-                      <div className="badge text-xl badge-primary p-4">
-                        {" "}
-                        {education.title}{" "}
-                      </div>
-
+                {aboutEducation.educations.map((education) => (
+                  <motion.div
+                    tabIndex={0}
+                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <input type="checkbox" className="peer " />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
+                      {education.title}{" "}
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
                       <div className="ml-5 mt-2">
                         <a
-                          className="hover:text-secondary-focus ease-in-out duration-300"
+                          className="hover:text-blue-700 ease-in-out duration-300"
                           href={education.link}
                           target="_blank"
                           rel="noreferrer"
@@ -188,9 +228,9 @@ export default function About() {
                         <p> {education.date} </p>
                         <p> {education.desc} </p>
                       </div>
-                    </li>
-                  ))}
-                </ul>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}
@@ -202,22 +242,27 @@ export default function About() {
               animate={{ opacity: 1 }}
             >
               <div className="flex flex-col">
-                <ul>
-                  {aboutAwards.awards.map((award) => (
-                    <li className="pb-4" key={award.id}>
-                      <div className="badge text-xl badge-primary p-4">
-                        {" "}
-                        {award.title}{" "}
-                      </div>
-
+                {aboutAwards.awards.map((award) => (
+                  <motion.div
+                    tabIndex={0}
+                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <input type="checkbox" className="peer " />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
+                      {award.title}{" "}
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
                       <div className="ml-5 mt-2">
                         <p> {award.desc} </p>
                         <p> {award.issuer}</p>
                         <p> {award.date} </p>
                       </div>
-                    </li>
-                  ))}
-                </ul>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}

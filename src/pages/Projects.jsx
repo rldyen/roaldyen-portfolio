@@ -37,7 +37,9 @@ export default function Projects() {
         }}
       >
         <div className="flex flex-col">
-          <h1 className="text-5xl font-bold text-center mb-12">Projects Worked On</h1>
+          <h1 className="text-5xl font-bold text-center mb-12">
+            Projects Worked On
+          </h1>
 
           <div className="carousel w-full">
             <div id="slide1" className="carousel-item relative w-full">
@@ -58,15 +60,27 @@ export default function Projects() {
                     UST Hospital Portal: Web-based Application for Clinical
                     Laboratory and Result Viewing
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 17,
+                      }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.figma.com/file/8nwh5QZw1YyNXFgep4VHCT/UST-Hospital-Portal?type=design&node-id=0%3A1&mode=design&t=6MyWj2NnUdXMscq2-1"
                     >
                       <DesignServicesIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                     <a
                       href="https://usth.vercel.app/"
                       className="btn btn-primary ease-in-out duration-300"
@@ -112,7 +126,12 @@ export default function Projects() {
                   <h2 className="card-title">
                     Web-based Application for Clothing Products using PHP
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
                     <a
                       href="http://ec2-54-251-226-55.ap-southeast-1.compute.amazonaws.com/"
@@ -159,15 +178,27 @@ export default function Projects() {
                   <h2 className="card-title">
                     Back-End Web Development 101 Final Project
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 17,
+                      }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/rldyen/backend-101-beginners-finalproject"
                     >
                       <GitHubIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -205,15 +236,23 @@ export default function Projects() {
                   <h2 className="card-title">
                     Web-based Appointment System for ASEA iWork Builders Co.
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.figma.com/file/BfI6nBssa7nObmTuJS8MjB/ASEA?type=design&node-id=0%3A1&mode=design&t=qFy8o3g4uFdwFsPN-1"
                     >
                       <DesignServicesIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                     <a
                       href="https://asea-iwork-builders-co.vercel.app/home"
                       className="btn btn-primary ease-in-out duration-300"
@@ -261,15 +300,23 @@ export default function Projects() {
                   <h2 className="card-title">
                     UMatter: A Mobile Application for Mood Tracking
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/rldyen/UMatter_MobileApplication"
                     >
                       <GitHubIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -308,15 +355,23 @@ export default function Projects() {
                   <h2 className="card-title">
                     USTracer: A Web-based Contract Tracing Application
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/rldyen/USTracer_FinalProject"
                     >
                       <GitHubIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -354,15 +409,23 @@ export default function Projects() {
                   <h2 className="card-title">
                     Equipment Management System using PHP
                   </h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo alias sit pariatur beatae, autem consequatur molestiae officia dolore recusandae ea iste provident cumque fugiat dolor saepe neque dicta voluptatibus?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae nemo alias sit pariatur beatae, autem consequatur
+                    molestiae officia dolore recusandae ea iste provident cumque
+                    fugiat dolor saepe neque dicta voluptatibus?
+                  </p>
                   <div className="card-actions justify-end items-center">
-                    <a
+                    <motion.a
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/rldyen/Equipment_Management_System_FinalProject"
                     >
                       <GitHubIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
