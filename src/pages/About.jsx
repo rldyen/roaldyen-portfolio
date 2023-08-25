@@ -75,7 +75,7 @@ export default function About() {
         </Tilt>
 
         <div className="m-14">
-          <h1 className="text-5xl font-bold">About Me</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold">About Me</h1>
           <p className="py-6 mb-5">
             I am an{" "}
             <span className="text-accent font-semibold">
