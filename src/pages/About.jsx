@@ -65,13 +65,19 @@ export default function About() {
         )}
 
         <Tilt>
-          <img
-            src={Roald}
-            alt="Roald Graduation Photo"
-            className={`sm:max-w-sm md:max-w-md lg:max-w-wd shadow-2xl mask ${shapeClass}`}
-            onClick={handleImageClick}
-            onLoad={handleImageLoad}
-          />
+          <motion.div
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <img
+              src={Roald}
+              alt="Roald Graduation Photo"
+              className={`sm:max-w-sm md:max-w-md lg:max-w-wd shadow-2xl mask ${shapeClass}`}
+              onClick={handleImageClick}
+              onLoad={handleImageLoad}
+            />
+          </motion.div>
         </Tilt>
 
         <div className="m-14">
