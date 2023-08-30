@@ -28,7 +28,7 @@ function Contact() {
         </div>
 
         <div className="text-center">
-          <p className="text-md md:text-lg lg:text-lg text-left mb-8 w-96 lg:w-auto md:w-auto">
+          <p className="text-md md:text-lg lg:text-lg text-justify mb-8 w-80 lg:w-auto md:w-auto ">
             Thank you for taking the time to look at my portfolio. I am
             passionate about creating, and I am always looking for new
             opportunities to collaborate, work on projects, or simply connect

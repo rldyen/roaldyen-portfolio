@@ -86,7 +86,7 @@ export default function About() {
 
         <div className="m-8">
           <h1 className="text-4xl lg:text-5xl font-bold">About Me</h1>
-          <p className="text-lg py-6 mb-5">
+          <p className="text-lg py-6 mb-5 text-justify">
             I am an{" "}
             <span className="text-accent font-semibold">
               IT graduate specializing in Web and Mobile App Development
