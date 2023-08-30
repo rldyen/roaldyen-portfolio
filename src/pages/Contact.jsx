@@ -28,14 +28,17 @@ function Contact() {
         </div>
 
         <div className="text-center">
-          <p className="text-accent text-sm md:text-md lg:text-md text-left mb-8 w-96 lg:w-auto md:w-auto">
+          <p className="text-md md:text-lg lg:text-lg text-left mb-8 w-96 lg:w-auto md:w-auto">
             Thank you for taking the time to look at my portfolio. I am
             passionate about creating, and I am always looking for new
             opportunities to collaborate, work on projects, or simply connect
-            with others. Whether you are interested in a design endeavor, a creative
-            partnership, or just a chat about shared interests, I am all ears.
-            Please feel free to reach out to me using the contact information
-            provided.
+            with others. Whether you are interested in a design endeavor, a
+            creative partnership, or just a chat about shared interests, I am
+            all ears.{" "}
+            <span className="text-accent">
+              Please feel free to reach out to me using the contact information
+              provided.
+            </span>
           </p>
         </div>
 

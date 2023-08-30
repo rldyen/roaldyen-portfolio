@@ -7,6 +7,10 @@ import aboutAwards from "../data/aboutAwards.json";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import ClipLoader from "react-spinners/ClipLoader";
+import ExtensionIcon from "@mui/icons-material/Extension";
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 
 const shapeClasses = [
   "rounded-2xl",
@@ -66,8 +70,8 @@ export default function About() {
 
         <Tilt>
           <motion.div
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 1.1 }}
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <img
@@ -80,9 +84,9 @@ export default function About() {
           </motion.div>
         </Tilt>
 
-        <div className="m-14">
+        <div className="m-8">
           <h1 className="text-4xl lg:text-5xl font-bold">About Me</h1>
-          <p className="py-6 mb-5">
+          <p className="text-lg py-6 mb-5">
             I am an{" "}
             <span className="text-accent font-semibold">
               IT graduate specializing in Web and Mobile App Development
@@ -92,14 +96,17 @@ export default function About() {
             great service to the company.
           </p>
 
-          <div className="tabs gap-8">
+          <div className="tabs gap-2">
             <a
               className={`tab text-lg tab-bordered ${
                 activeTab === "skills" && "tab-active"
               }`}
               onClick={() => handleTabClick("skills")}
             >
-              Skills
+              <div className="flex flex-row items-center">
+                <ExtensionIcon />
+                <div className="ml-2">Skills</div>
+              </div>
             </a>
 
             <a
@@ -108,7 +115,10 @@ export default function About() {
               }`}
               onClick={() => handleTabClick("workExperiences")}
             >
-              Work Experiences
+              <div className="flex flex-row items-center">
+                <WorkIcon />
+                <div className="ml-2">Work Experiences</div>
+              </div>
             </a>
 
             <a
@@ -117,7 +127,10 @@ export default function About() {
               }`}
               onClick={() => handleTabClick("education")}
             >
-              Education
+              <div className="flex flex-row items-center">
+                <SchoolIcon />
+                <div className="ml-2">Education</div>
+              </div>
             </a>
 
             <a
@@ -126,7 +139,10 @@ export default function About() {
               }`}
               onClick={() => handleTabClick("awardsCertifications")}
             >
-              Awards & Certifications
+              <div className="flex flex-row items-center">
+                <EmojiEventsIcon />
+                <div className="ml-2">Awards & Certification</div>
+              </div>
             </a>
           </div>
 

@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import HomeIcon from "@mui/icons-material/Home";
 
 function PageNotFound() {
+  const navigate = useNavigate();
+  const routeToHome = () => {
+    let path = "/";
+    navigate(path);
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 700 }}
@@ -25,11 +31,20 @@ function PageNotFound() {
           <h1 className="text-4xl font-bold">Page Not Found</h1>
           <p className="py-6">
             The page you are looking for might have been removed, had its name
-            changed, or is temporarily unavailable.
+            changed, or is unavailable.
           </p>
-          <button className="btn-accent btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer ease-in-out duration-300">
-            <Link to="/">Go back to Home</Link>
-          </button>
+          <motion.button
+            onClick={routeToHome}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            className="btn-accent btn-md sm:btn-md md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer"
+          >
+            <div className="flex flex-row items-center">
+              <HomeIcon />
+              <div className="ml-2">Go back to Home</div>
+            </div>
+          </motion.button>
         </div>
       </motion.div>
     </motion.div>

@@ -3,6 +3,7 @@ import TextSpan from "../components/TextSpan";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import FolderIcon from "@mui/icons-material/Folder";
 
 export default function Home() {
   const name = "Roald!".split("");
@@ -33,7 +34,7 @@ export default function Home() {
             Hello, I am
           </div>
 
-          <div className="ml-3 text-4xl sm:text-2xl md:text-6xl lg:text-6xl ">
+          <div className="ml-3 text-4xl sm:text-3xl md:text-6xl lg:text-6xl ">
             <div className="font-bold text-primary">
               {name.map((letter, index) => {
                 return (
@@ -51,7 +52,7 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="mt-6 sm:text-xl md:text-3xl lg:text-3xl text-accent">
+          <div className="mt-6 texl-2xl md:text-3xl lg:text-3xl text-accent">
             An aspiring&nbsp;
             <TypeAnimation
               sequence={["UI/UX Designer", 2000, "Web Developer", 2000]}
@@ -63,7 +64,7 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center">
-          <p className="m-8 text-justify sm:w-9/12 md:w-9/12 lg:w-6/12 mt-10 text-base-content">
+          <p className="m-8 text-justify sm:w-9/12 md:w-9/12 lg:w-6/12 mt-10 text-md md:text-lg lg:text-lg">
             I am enthusiastic about technology and eager to create web-based
             application designs utilizing modern technologies. I am very
             interested in doing UI/UX Design and Web Development, and I am
@@ -74,15 +75,18 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex justify-center">
           <motion.button
             onClick={routeToProjects}
-            className="btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer"
+            className="btn-primary btn-md sm:btn-md md:btn-md lg:btn-lg mt-4 rounded-2xl cursor-pointer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            See my Projects
+            <div className="flex flex-row items-center">
+              <FolderIcon />
+              <div className="ml-2">See my Projects</div>
+            </div>
           </motion.button>
         </div>
       </motion.div>
