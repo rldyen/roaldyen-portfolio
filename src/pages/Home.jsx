@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import FolderIcon from "@mui/icons-material/Folder";
 
+
 export default function Home() {
   const name = "Roald!".split("");
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ export default function Home() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="bg-[url(./assets/backgrounds/layered-waves-haikei-1.svg)] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center"
     >
+      
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

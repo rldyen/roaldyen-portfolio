@@ -6,6 +6,8 @@ import "./App.css";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import AnimatedCursor from "react-animated-cursor";
 
+import Snowfall from "react-snowfall";
+
 function App() {
   return (
     <div className="App bg-base-200">
@@ -28,6 +30,8 @@ function App() {
           ".link",
         ]}
       />
+
+      <Snowfall color="#733F96" snowflakeCount={50} />
 
       <Router>
         <Navbar />
