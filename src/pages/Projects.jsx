@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectUSTH from "../assets/projectUSTH.jpg";
-import ProjectTeeHP from "../assets/projectTeeHP.jpg";
+import ProjectInventory from "../assets/projectInventory.png";
 import ProjectBayanAcademy from "../assets/projectBayanAcademy.jpg";
 import ProjectASEA from "../assets/projectASEA.jpg";
 import ProjectUMatter from "../assets/projectUMatter.png";
 import ProjectUSTracer from "../assets/projectUSTracer.jpg";
 import ProjectEquipmentManagementSystem from "../assets/projectEquipmentManagementSystem.jpg";
+import ProjectRiskScape from "../assets/projectRiskScape.png"
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -93,25 +94,74 @@ export default function Projects() {
               <div className="h-96 w-80">
                 <img
                   className="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
-                  src={ProjectTeeHP}
-                  alt="Web-based Application for Clothing Products using PHP"
+                  src={ProjectInventory}
+                  alt="Inventory Management Systems"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-secondary-focus group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[35%] group-hover:translate-y-0 transition-all">
-                <h1 className="text-xl font-bold text-white">TeeHP</h1>
+                <h1 className="text-xl font-bold text-white">
+                  Inventory Management Systems
+                </h1>
 
                 <p className="text-md italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  A Web-based Application for Clothing Products using PHP
+                  Three designs for an Inventory Management System
                 </p>
-                <a
-                  href="http://ec2-54-251-226-55.ap-southeast-1.compute.amazonaws.com/"
-                  className="btn btn-primary ease-in-out duration-300"
+
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 17,
+                  }}
                   target="_blank"
                   rel="noreferrer"
+                  href="https://www.figma.com/file/IMAJsA9wpqDU4AfSICLy8E/Inventory-Monitoring-System-(3-Designs)?type=design&node-id=0%3A1&mode=design&t=6y2sxAWu5DKGcaXS-1"
                 >
-                  View Live Website
-                </a>
+                  <DesignServicesIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
+                </motion.a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1.2 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow mask mask-squircle"
+            >
+              <div className="h-96 w-80">
+                <img
+                  className="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                  src={ProjectRiskScape}
+                  alt="RiskScape (Revamp)"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-secondary-focus group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[35%] group-hover:translate-y-0 transition-all">
+                <h1 className="text-xl font-bold text-white">
+                  RiskScape (Revamp)
+                </h1>
+
+                <p className="text-md italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Revamping of an Application for Assessing Disasters
+                </p>
+
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 17,
+                  }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.figma.com/file/lnbQPpk1CoGxPAQxrluW6V/RiskScape-(Revamp)?type=design&node-id=0%3A1&mode=design&t=8CohpEI0ENY8AhwF-1"
+                >
+                  <DesignServicesIcon className="m-4 hover:text-secondary ease-in-out duration-300" />
+                </motion.a>
               </div>
             </motion.div>
 
