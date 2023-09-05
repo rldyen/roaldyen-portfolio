@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Bachelor of Science in Information Technology",
-      "school": "University of Santo Tomas",
+      "school": "University of Santo Tomas - College of Information and Computing Sciences",
       "date": "2019 - 2023",
       "desc": "Specialization in Web and Mobile App Development",
       "link": "https://www.ust.edu.ph/information-and-computing-sciences/"
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "title": "Senior High School",
-      "school": "University of Santo Tomas",
+      "school": "University of Santo Tomas - Senior High School",
       "date": "2017 - 2019",
       "desc": "Science, Technology, Engineering, and Mathematics Strand",
       "link": "https://www.ust.edu.ph/senior-high-school/"
