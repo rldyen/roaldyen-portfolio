@@ -91,9 +91,8 @@ export default function About() {
             <span className="text-accent font-semibold">
               IT graduate specializing in Web and Mobile App Development
             </span>{" "}
-            seeking an entry-level position in UI/UX Design or Web Development
-            to further improve my personal growth and career, as well as provide
-            great service to the company.
+            working as a Junior UI/UX Designer to further improve my personal
+            growth and career.
           </p>
 
           <div className="tabs gap-2">
