@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import FolderIcon from "@mui/icons-material/Folder";
 
-
 export default function Home() {
   const name = "Roald!".split("");
   const navigate = useNavigate();
@@ -21,7 +20,6 @@ export default function Home() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="bg-[url(./assets/backgrounds/layered-waves-haikei-1.svg)] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center"
     >
-      
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -55,9 +53,9 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <div className="mt-6 texl-2xl md:text-3xl lg:text-3xl text-accent">
-            An aspiring&nbsp;
+            A creative&nbsp;
             <TypeAnimation
-              sequence={["UI/UX Designer", 2000, "Web Developer", 2000]}
+              sequence={["Junior UI/UX Designer", 2000, "Product Designer", 2000]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
@@ -67,13 +65,11 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <p className="m-8 text-justify sm:w-9/12 md:w-9/12 lg:w-6/12 mt-10 text-md md:text-lg lg:text-lg">
-            I am enthusiastic about technology and eager to create web-based
-            application designs utilizing modern technologies. I am very
-            interested in doing UI/UX Design and Web Development, and I am
-            continuously improving my skills to become a great UI/UX Designer or
-            a Web Developer in the IT industry. My passion is focused on
-            designing and creating appealing interfaces for both web and mobile
-            applications.
+            I am enthusiastic about technology and utilize modern technologies
+            to create applications. I am very interested in creating appealing
+            designs for web and mobile applications and I have a strong interest
+            in web development. I am continuously improving my skills to become
+            a great UI/UX designer or a web developer in the IT industry.
           </p>
         </div>
 

@@ -2,6 +2,21 @@
   "works": [
     {
       "id": "1",
+      "title": "Junior UI/UX Designer (present)",
+      "company": "Eclectus Technologies, Inc.",
+      "date": "2023 Oct - present",
+      "link": "https://eclectustech.net/",
+      "desc": [
+        {
+          "desc1": "Collaborated with another UI/UX designer to understand project goals and design requirements.",
+          "desc2": "Assisted in creating user flows, wireframes, and prototypes to communicate design concepts.",
+          "desc3": "Contributed to the design and development of visually appealing user interfaces that enhance user experience.",
+          "desc4": "Worked closely with the development team to ensure seamless integration of UI elements."
+        }
+      ]
+    },
+    {
+      "id": "2",
       "title": "UI/UX Design Apprentice (3 mos.)",
       "company": "KadaKareer Virtual Apprenticeship Program",
       "date": "2023 May - 2023 Jul (3 months)",
