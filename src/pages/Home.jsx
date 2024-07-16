@@ -55,7 +55,12 @@ export default function Home() {
           <div className="mt-6 texl-2xl md:text-3xl lg:text-3xl text-accent">
             A creative&nbsp;
             <TypeAnimation
-              sequence={["Junior UI/UX Designer", 2000, "Product Designer", 2000]}
+              sequence={[
+                "Junior UI/UX Designer",
+                2000,
+                "Product Designer",
+                2000,
+              ]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
@@ -65,11 +70,9 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <p className="m-8 text-justify sm:w-9/12 md:w-9/12 lg:w-6/12 mt-10 text-md md:text-lg lg:text-lg">
-            I am enthusiastic about technology and utilize modern technologies
-            to create applications. I am very interested in creating appealing
-            designs for web and mobile applications and I have a strong interest
-            in web development. I am continuously improving my skills to become
-            a great UI/UX designer or a web developer in the IT industry.
+            🚀 I'm a tech enthusiast with a passion for building applications that
+            make a real impact. With a strong focus on design, I create web and
+            mobile app experiences that are visually stunning and user-friendly.
           </p>
         </div>
 

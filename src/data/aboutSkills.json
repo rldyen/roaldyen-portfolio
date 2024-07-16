@@ -2,23 +2,28 @@
   "skills": [
     {
       "id": "1",
-      "title": "UI/UX Design",
-      "desc": "Figma, Adobe XD, Adobe Photoshop, Clip Studio Paint"
+      "title": "UI/UX Design Tools",
+      "desc": "Figma, Adobe XD, Adobe Photoshop"
     },
     {
       "id": "2",
-      "title": "Front-End Development",
+      "title": "Front-End Web Development",
       "desc": "HTML, Vanilla Javascript, ReactJS, Vanilla CSS, Bootstrap, Tailwind CSS, daisyUI"
     },
     {
       "id": "3",
-      "title": "Back-End Development & Database",
-      "desc": "NodeJS, ExpressJS, MSSQL, MySQL, Apache, MongoDB"
+      "title": "Back-End Web Development ",
+      "desc": "NodeJS, ExpressJS"
     },
     {
       "id": "4",
       "title": "Programming Languages",
       "desc": "Java, Android Java, Python, VB.Net, PHP, JavaScript"
+    },
+    {
+      "id": "5",
+      "title": "Developer Tools",
+      "desc": "VS Code, VS Studio, Android Studio, Git, GitHub, Trello"
     }
   ]
 }

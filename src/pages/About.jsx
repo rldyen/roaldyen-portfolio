@@ -204,9 +204,11 @@ export default function About() {
                           {work.company}
                         </a>
                         <p className=""> {work.date} </p>
+                       
                         <ul className="mt-2">
+                        <p className="font-bold"> {work.project} </p>
                           {Object.values(work.desc[0]).map((desc, index) => (
-                            <li key={index}> - {desc} </li>
+                            <li key={index}> • {desc} </li>
                           ))}
                         </ul>
                       </div>
