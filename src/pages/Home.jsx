@@ -56,9 +56,21 @@ export default function Home() {
             A creative&nbsp;
             <TypeAnimation
               sequence={[
-                "Junior UI/UX Designer",
+                "Develop",
                 2000,
-                "Product Designer",
+                "Ideate",
+                2000,
+                "Shape",
+                2000,
+                "Craft",
+                2000,
+                "Plan",
+                2000,
+                "Design",
+                2000,
+                "Draft",
+                2000,
+                "Innovate",
                 2000,
               ]}
               wrapper="span"

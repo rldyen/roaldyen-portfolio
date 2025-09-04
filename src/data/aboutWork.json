@@ -2,23 +2,40 @@
   "works": [
     {
       "id": "1",
-      "title": "Junior UI/UX Designer (present)",
+      "title": "UI/UX Designer (present)",
       "company": "Eclectus Technologies, Inc.",
-      "date": "2023 Oct - present",
+      "date": "2025 May - present",
       "link": "https://eclectustech.net/",
       "project":"Project of a Timekeeping and Human Resource Management",
       "desc": [
         {
-          "desc1": "Worked hand-in-hand with the team to turn project goals into design strategies.",
-          "desc2": "Created user flows, wireframes, and interactive prototypes to bring design ideas to life.",
-          "desc3": "Stayed ahead of the curve with competitive analysis, identifying opportunities to innovate and improve user experiences.",
-          "desc4": "Designed intuitive and visually stunning interfaces with a focus on making things easy to use and accessible to all.",
-          "desc5": "Teamed up with developers to ensure designs became a reality, providing guidance and support every step of the way."
+          "desc1": "Led end-to-end design process from research to handoff.",
+          "desc2": "Defined user flows, wireframes, and high-fidelity prototypes.",
+          "desc3": "Conducted competitor analysis to guide improvements.",
+          "desc4": "Designed scalable, accessible interfaces aligned with user needs.",
+          "desc5": "Collaborated with developers to refine implementation and maintain design quality."
         }
       ]
     },
     {
       "id": "2",
+      "title": "Junior UI/UX Designer (1 yr. 8 mos.)",
+      "company": "Eclectus Technologies, Inc.",
+      "date": "2023 Oct - 2025 May",
+      "link": "https://eclectustech.net/",
+      "project":"Project of a Timekeeping and Human Resource Management",
+      "desc": [
+        {
+          "desc1": "Collaborated with the team to turn project goals into design solutions.",
+          "desc2": "Created user flows, wireframes, and prototypes to communicate ideas.",
+          "desc3": "Researched competitors to find ways to improve the user experience.",
+          "desc4": "Designed clean, user-friendly, and accessible interfaces.",
+          "desc5": "Worked with developers to bring designs to life and ensure accuracy."
+        }
+      ]
+    },
+    {
+      "id": "3",
       "title": "UI/UX Design Apprentice (3 mos.)",
       "company": "KadaKareer Virtual Apprenticeship Program",
       "date": "2023 May - 2023 Jul (3 months)",
@@ -33,7 +50,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "4",
       "title": "UI/UX Design Intern (5 mos.)",
       "company": "Symph Inc.",
       "date": "2023 Jan - 2023 May (5 months)",

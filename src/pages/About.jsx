@@ -91,7 +91,7 @@ export default function About() {
             <span className="text-accent font-semibold">
               IT graduate specializing in Web and Mobile App Development
             </span>{" "}
-            working as a Junior UI/UX Designer to further improve my personal
+            working as a UI/UX Designer to further improve my personal
             growth and career.
           </p>
 
