@@ -53,7 +53,6 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <div className="mt-6 texl-2xl md:text-3xl lg:text-3xl text-accent">
-            A creative&nbsp;
             <TypeAnimation
               sequence={[
                 "Develop",
