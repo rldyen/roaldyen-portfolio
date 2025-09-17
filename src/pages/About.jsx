@@ -26,7 +26,7 @@ const shapeClasses = [
 ];
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState("skills");
+  const [activeTab, setActiveTab] = useState("workExperiences");
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
   };
