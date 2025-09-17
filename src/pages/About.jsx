@@ -91,12 +91,11 @@ export default function About() {
             <span className="text-accent font-semibold">
               IT graduate specializing in Web and Mobile App Development
             </span>{" "}
-            working as a UI/UX Designer to further improve my personal
-            growth and career.
+            working as a UI/UX Designer to further improve my personal growth
+            and career.
           </p>
 
           <div className="tabs gap-2">
-
             <a
               className={`tab text-lg tab-bordered ${
                 activeTab === "workExperiences" && "tab-active"
@@ -147,33 +146,6 @@ export default function About() {
           </div>
 
           {/* Render the content based on the active tab */}
-          {activeTab === "skills" && (
-            <motion.div
-              className="py-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              <div className="flex flex-col ">
-                {aboutSkills.skills.map((skill) => (
-                  <motion.div
-                    tabIndex={0}
-                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
-                    <input type="checkbox" className="peer " />
-                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
-                      {skill.title}{" "}
-                    </div>
-                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
-                      <p className="ml-5 mt-2"> {skill.desc} </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          )}
 
           {activeTab === "workExperiences" && (
             <motion.div
@@ -205,14 +177,42 @@ export default function About() {
                           {work.company}
                         </a>
                         <p className=""> {work.date} </p>
-                       
+
                         <ul className="mt-2">
-                        <p className="font-bold"> {work.project} </p>
+                          <p className="font-bold"> {work.project} </p>
                           {Object.values(work.desc[0]).map((desc, index) => (
                             <li key={index}> • {desc} </li>
                           ))}
                         </ul>
                       </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          {activeTab === "skills" && (
+            <motion.div
+              className="py-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              <div className="flex flex-col ">
+                {aboutSkills.skills.map((skill) => (
+                  <motion.div
+                    tabIndex={0}
+                    className="collapse collapse-arrow border border-base-300 bg-base-200 m-2 shadow-xl"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <input type="checkbox" className="peer " />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content text-xl ">
+                      {skill.title}{" "}
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
+                      <p className="ml-5 mt-2"> {skill.desc} </p>
                     </div>
                   </motion.div>
                 ))}
