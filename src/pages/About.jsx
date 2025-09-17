@@ -96,17 +96,6 @@ export default function About() {
           </p>
 
           <div className="tabs gap-2">
-            <a
-              className={`tab text-lg tab-bordered ${
-                activeTab === "skills" && "tab-active"
-              }`}
-              onClick={() => handleTabClick("skills")}
-            >
-              <div className="flex flex-row items-center">
-                <ExtensionIcon />
-                <div className="ml-2">Skills</div>
-              </div>
-            </a>
 
             <a
               className={`tab text-lg tab-bordered ${
@@ -117,6 +106,18 @@ export default function About() {
               <div className="flex flex-row items-center">
                 <WorkIcon />
                 <div className="ml-2">Work Experiences</div>
+              </div>
+            </a>
+
+            <a
+              className={`tab text-lg tab-bordered ${
+                activeTab === "skills" && "tab-active"
+              }`}
+              onClick={() => handleTabClick("skills")}
+            >
+              <div className="flex flex-row items-center">
+                <ExtensionIcon />
+                <div className="ml-2">Skills</div>
               </div>
             </a>
 
