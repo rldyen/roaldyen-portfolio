@@ -7,23 +7,28 @@
     },
     {
       "id": "2",
-      "title": "Front-End Web Development",
-      "desc": "HTML, Vanilla Javascript, ReactJS, Vanilla CSS, Bootstrap, Tailwind CSS, daisyUI"
+      "title": "UX Research & Strategy",
+      "desc": "Competitive Analysis, User Research, Wireframing, Prototyping, User Flows, Usability Testing"
     },
     {
       "id": "3",
-      "title": "Back-End Web Development ",
-      "desc": "NodeJS, ExpressJS"
+      "title": "UI Design",
+      "desc": "Visual Design, Responsive Design, Design Systems, Typography, Color Theory, Accessibility (WCAG)"
     },
     {
       "id": "4",
-      "title": "Programming Languages",
-      "desc": "Java, Android Java, Python, VB.Net, PHP, JavaScript"
+      "title": "Front-End Integration",
+      "desc": "HTML, CSS, Tailwind CSS, React"
     },
     {
       "id": "5",
-      "title": "Developer Tools",
-      "desc": "VS Code, Visual Studio, Android Studio, Git, GitHub, Trello"
+      "title": "Collaboration & Project Tools",
+      "desc": "Notion, Trello, GitHub, VS Code, FigJam"
+    },
+    {
+      "id": "6",
+      "title": "Soft Skills",
+      "desc": "Empathy, Collaboration, Critical Thinking, Attention to Detail"
     }
   ]
 }
